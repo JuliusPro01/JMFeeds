@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import api from '../api/client';
@@ -216,7 +216,7 @@ export default function Layout() {
             <Box>
               <Typography sx={{ fontSize: 13.5, fontWeight: 700, lineHeight: 1.1 }}>{user?.fullName}</Typography>
               <Typography sx={{ fontSize: 11, color: user?.role === 'OWNER' ? '#23A455' : '#47607A', fontWeight: 600 }}>
-                {user?.role === 'OWNER' ? 'Admin ⌄' : 'Operator ⌄'}
+                {user?.role === 'OWNER' ? 'Admin âŒ„' : 'Operator âŒ„'}
               </Typography>
             </Box>
           </Box>
@@ -273,7 +273,7 @@ export default function Layout() {
       <Box component="main" sx={{ flexGrow: 1, p: { xs: 2, md: 3 }, width: { md: `calc(100% - ${drawerWidth}px)`, overflow: 'auto' } }}>
         <Toolbar />
         <Box sx={{ mb: 2.5 }}>
-          <Typography variant="h5" sx={{ fontWeight: 800, fontSize: 24 }}>{current?.label ?? 'FeedPro'}</Typography>
+          <Typography variant="h5" sx={{ fontWeight: 800, fontSize: 24 }}>{current?.label ?? 'JMFeeds'}</Typography>
           <Typography sx={{ fontSize: 13, color: 'text.secondary' }}>
             {current?.label === 'Dashboard' ? "Here's what's happening with your business today." : ' '}
           </Typography>

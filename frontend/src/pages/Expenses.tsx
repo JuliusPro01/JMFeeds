@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   Box,
@@ -98,7 +98,7 @@ export default function Expenses() {
   }));
 
   const exportAll = async (type: "pdf" | "excel" | "csv") => {
-    const f = `feedpro-expenses-${new Date().toISOString().slice(0, 10)}`;
+    const f = `jmfeeds-expenses-${new Date().toISOString().slice(0, 10)}`;
     if (type === "pdf") await exportPDF(f, "Expenses Report", rows);
     else if (type === "excel") await exportExcel(f, rows, "Expenses");
     else await exportCSV(f, rows);
@@ -199,10 +199,10 @@ export default function Expenses() {
                   onChange={(e) => setSelectedOperator(e.target.value)}
                   sx={{ minWidth: 230 }}
                 >
-                  <MenuItem value="ALL">🏢 All Staff (Combined)</MenuItem>
+                  <MenuItem value="ALL">ðŸ¢ All Staff (Combined)</MenuItem>
                   {users.map((u: any) => (
                     <MenuItem key={u.id} value={u.id}>
-                      👤 {u.fullName} ({u.role})
+                      ðŸ‘¤ {u.fullName} ({u.role})
                     </MenuItem>
                   ))}
                 </TextField>

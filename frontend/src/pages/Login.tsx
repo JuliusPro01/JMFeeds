@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Box, Typography, TextField, Button, Checkbox, FormControlLabel,
@@ -180,7 +180,7 @@ export default function Login() {
                   fullWidth
                   size="small"
                   type={showPassword ? 'text' : 'password'}
-                  placeholder="••••••••"
+                  placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   autoComplete="current-password"
@@ -308,9 +308,9 @@ export default function Login() {
                 </Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1, flexWrap: 'wrap' }}>
                   <Chip
-                    label="👑 Owner: admin@feedpro.co.ke"
+                    label="ðŸ‘‘ Owner: admin@jmfeeds.co.ke"
                     size="small"
-                    onClick={() => fillCredentials('admin@feedpro.co.ke', 'admin123')}
+                    onClick={() => fillCredentials('admin@jmfeeds.co.ke', 'admin123')}
                     sx={{
                       cursor: 'pointer',
                       bgcolor: '#EAF7EF',
@@ -321,7 +321,7 @@ export default function Login() {
                     }}
                   />
                   <Chip
-                    label="👤 Operator: operator"
+                    label="ðŸ‘¤ Operator: operator"
                     size="small"
                     onClick={() => fillCredentials('operator', 'operator123')}
                     sx={{
@@ -352,7 +352,7 @@ export default function Login() {
             <Box
               component="img"
               src={new URL('../assets/cow_feed_banner.png', import.meta.url).href}
-              alt="FeedPro Animal Nutrition & Feed Management"
+              alt="JMFeeds Animal Nutrition & Feed Management"
               sx={{
                 width: '100%',
                 height: '100%',

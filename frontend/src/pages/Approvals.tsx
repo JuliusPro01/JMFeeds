@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import {
   Box, Button, Typography, Paper, Table, TableBody, TableCell, TableHead, TableRow,
@@ -16,7 +16,7 @@ export default function Approvals() {
   const [notes, setNotes] = useState('');
   const [snack, setSnack] = useState<{ msg: string; type: any } | null>(null);
 
-  const isOwner = (JSON.parse(localStorage.getItem('feedpro_user') ?? '{}')?.role ?? 'OPERATOR') !== 'OPERATOR';
+  const isOwner = (JSON.parse(localStorage.getItem('jmfeeds_user') ?? '{}')?.role ?? 'OPERATOR') !== 'OPERATOR';
 
   const { data, isLoading } = useQuery({
     queryKey: ['approvals'],
@@ -78,7 +78,7 @@ export default function Approvals() {
                     {r.sale?.invoiceNumber ?? r.transactionId}
                     {r.sale && (
                       <Typography sx={{ fontSize: 10.5, color: 'text.secondary' }}>
-                        Total {fmt(r.sale.totalAmount)} · Paid {fmt(r.sale.amountPaid)} · Balance {fmt(r.sale.balanceDue)}
+                        Total {fmt(r.sale.totalAmount)} Â· Paid {fmt(r.sale.amountPaid)} Â· Balance {fmt(r.sale.balanceDue)}
                       </Typography>
                     )}
                   </TableCell>
@@ -126,7 +126,7 @@ export default function Approvals() {
               <Box sx={{ mt: 1, fontSize: 12 }}>
                 {(reviewing.sale.items ?? []).map((i: any) => (
                   <Box key={i.id} sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>{i.product?.name} × {Number(i.quantity)}</span>
+                    <span>{i.product?.name} Ã— {Number(i.quantity)}</span>
                     <span>{fmt(i.totalPrice)}</span>
                   </Box>
                 ))}
@@ -149,7 +149,7 @@ export default function Approvals() {
           <Button onClick={() => setReviewing(null)}>Cancel</Button>
           <Button variant="contained" color={action === 'APPROVE' ? 'success' : 'error'}
             onClick={() => review.mutate()} disabled={review.isPending}>
-            {review.isPending ? 'Processing…' : action === 'APPROVE' ? 'Confirm Approval' : 'Confirm Rejection'}
+            {review.isPending ? 'Processingâ€¦' : action === 'APPROVE' ? 'Confirm Approval' : 'Confirm Rejection'}
           </Button>
         </DialogActions>
       </Dialog>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+﻿import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import {
@@ -196,7 +196,7 @@ export default function Settings() {
 
                 <TextField
                   label="Email Address (Used for Login)"
-                  placeholder="admin@feedpro.co.ke"
+                  placeholder="admin@jmfeeds.co.ke"
                   size="small"
                   fullWidth
                   value={profileForm.email}
@@ -467,7 +467,7 @@ export default function Settings() {
           </Box>
 
           <Typography sx={{ fontSize: 13, color: 'text.secondary', mb: 3 }}>
-            FeedPro implements a multi-layer defense strategy to safeguard business revenue and prevent employee tampering.
+            JMFeeds implements a multi-layer defense strategy to safeguard business revenue and prevent employee tampering.
           </Typography>
 
           <Stack spacing={2}>

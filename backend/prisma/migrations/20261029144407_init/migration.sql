@@ -1,4 +1,4 @@
--- CreateEnum
+﻿-- CreateEnum
 CREATE TYPE "Role" AS ENUM ('OWNER', 'OPERATOR', 'ADMIN');
 
 -- CreateEnum
@@ -272,7 +272,7 @@ CREATE TABLE "Notification" (
 -- CreateTable
 CREATE TABLE "BusinessSettings" (
     "id" TEXT NOT NULL,
-    "businessName" TEXT NOT NULL DEFAULT 'FeedPro Enterprises',
+    "businessName" TEXT NOT NULL DEFAULT 'JMFeeds Enterprises',
     "currency" TEXT NOT NULL DEFAULT 'KSh',
     "taxRate" DECIMAL(5,2) NOT NULL DEFAULT 0,
     "enableServices" BOOLEAN NOT NULL DEFAULT false,

@@ -1,4 +1,4 @@
-import express from 'express';
+﻿import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import authRoutes from './routes/auth';
@@ -38,7 +38,7 @@ app.use((req, res, next) => {
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', app: 'FeedPro Business Management System' });
+  res.json({ status: 'ok', app: 'JMFeeds Business Management System' });
 });
 
 // Routes
@@ -68,5 +68,5 @@ app.use((err: any, req: any, res: any, next: any) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`FeedPro backend running on port ${PORT}`);
+  console.log(`JMFeeds backend running on port ${PORT}`);
 });

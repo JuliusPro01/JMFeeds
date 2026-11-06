@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Box,
@@ -97,7 +97,7 @@ export default function Landing() {
                   <Typography
                     sx={{ fontSize: 13, fontWeight: 700, color: "#1B7A3E" }}
                   >
-                    Voice of the Farmer JM Feeds · FeedPro BMS
+                    Voice of the Farmer JM Feeds Â· JMFeeds BMS
                   </Typography>
                 </Box>
 
@@ -128,7 +128,7 @@ export default function Landing() {
                   }}
                 >
                   Track dairy meal, poultry feeds, supplements, and farming supplies. Manage sales,
-                  debts, and stock — all in one system built for Voice of the Farmer JM FEEDS
+                  debts, and stock â€” all in one system built for Voice of the Farmer JM FEEDS
                   in Murang'a Town.
                 </Typography>
 
@@ -234,7 +234,7 @@ export default function Landing() {
                       import.meta.url,
                     ).href
                   }
-                  alt="FeedPro Animal Feed Management System"
+                  alt="JMFeeds Animal Feed Management System"
                   sx={{
                     width: "100%",
                     height: "auto",
@@ -278,7 +278,7 @@ export default function Landing() {
                       Real-time Feed Ledger
                     </Typography>
                     <Typography sx={{ fontSize: 11, color: "#627D98" }}>
-                      Layers â€¢ Dairy â€¢ Broilers â€¢ Supplements
+                      Layers Ã¢â‚¬Â¢ Dairy Ã¢â‚¬Â¢ Broilers Ã¢â‚¬Â¢ Supplements
                     </Typography>
                   </Box>
                 </Box>
@@ -536,7 +536,7 @@ export default function Landing() {
                 mb: 1,
               }}
             >
-              What FeedPro Does for Voice of the Farmer JM FEEDS
+              What JMFeeds Does for Voice of the Farmer JM FEEDS
             </Typography>
             <Typography
               variant="h2"
@@ -550,7 +550,7 @@ export default function Landing() {
               Everything Needed to Run the Feed & Cosmetics Shop Profitably
             </Typography>
             {/* <Typography sx={{ fontSize: 15, color: '#627D98' }}>
-              Unlike generic spreadsheets or rigid retail tools, FeedPro was architected to handle the real-world complexity of agricultural feeds, multiple units, customer credit, and expiry controls.
+              Unlike generic spreadsheets or rigid retail tools, JMFeeds was architected to handle the real-world complexity of agricultural feeds, multiple units, customer credit, and expiry controls.
             </Typography> */}
           </Box>
 
@@ -866,7 +866,7 @@ export default function Landing() {
                     mb: 1,
                   }}
                 >
-                  About FeedPro
+                  About JMFeeds
                 </Typography>
                 <Typography
                   variant="h2"
@@ -888,7 +888,7 @@ export default function Landing() {
                   }}
                 >
                   Voice of the Farmer JM FEEDS in Murang'a Town handles dairy meal, layers mash,
-                  broiler finisher, and farming supplies — all with credit customers,
+                  broiler finisher, and farming supplies â€” all with credit customers,
                   M-Pesa payments, and daily cash reconciliations. 
                 </Typography>
                 <Typography
@@ -901,7 +901,7 @@ export default function Landing() {
                 >
                   The owner can see every bag that entered or left the store,
                   who owes money, which products generate the best margins, and
-                  whether the day's cash matches the sales records — all from
+                  whether the day's cash matches the sales records â€” all from
                   one dashboard.
                 </Typography>
                 <Button

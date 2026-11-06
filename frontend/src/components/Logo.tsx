@@ -32,8 +32,8 @@ export default function Logo({ height = 40, light = false }: LogoProps) {
         fontSize="26"
         fontWeight="800"
       >
-        <tspan fill={light ? '#FFFFFF' : '#123A52'}>Feed</tspan>
-        <tspan fill="#2DBB67">Pro</tspan>
+        <tspan fill={light ? '#FFFFFF' : '#123A52'}>JM</tspan>
+        <tspan fill="#2DBB67">Feeds</tspan>
       </text>
     </Box>
   );

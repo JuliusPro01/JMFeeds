@@ -1,8 +1,8 @@
-import bcrypt from 'bcryptjs';
+﻿import bcrypt from 'bcryptjs';
 import prisma from './prisma';
 
 /**
- * Clean Production Seeder for FeedPro
+ * Clean Production Seeder for JMFeeds
  * 
  * Prepares the system for GO-LIVE:
  * 1. Clears all demo / dummy sales, debts, expenses, purchases, customers, and mock stock.
@@ -58,7 +58,7 @@ export async function seedCleanProduction() {
     update: {
       businessName: "Voice of the Farmer JM Feeds",
       contactPhone: '0726704623',
-      contactEmail: 'info@feedpro.co.ke',
+      contactEmail: 'info@jmfeeds.co.ke',
       physicalAddress: "Murang'a Town",
       currency: 'KSh',
       timeZone: 'Africa/Nairobi',
@@ -73,7 +73,7 @@ export async function seedCleanProduction() {
       id: 'default-settings',
       businessName: "Voice of the Farmer JM Feeds",
       contactPhone: '0726704623',
-      contactEmail: 'info@feedpro.co.ke',
+      contactEmail: 'info@jmfeeds.co.ke',
       physicalAddress: "Murang'a Town",
       currency: 'KSh',
       timeZone: 'Africa/Nairobi',
@@ -113,7 +113,7 @@ export async function seedCleanProduction() {
     where: { username: 'owner' },
     update: {
       fullName: 'JM Feeds Owner',
-      email: 'admin@feedpro.co.ke',
+      email: 'admin@jmfeeds.co.ke',
       phone: '0726704623',
       role: 'OWNER',
       isActive: true,
@@ -122,7 +122,7 @@ export async function seedCleanProduction() {
     create: {
       username: 'owner',
       fullName: 'JM Feeds Owner',
-      email: 'admin@feedpro.co.ke',
+      email: 'admin@jmfeeds.co.ke',
       phone: '0726704623',
       passwordHash: defaultPasswordHash,
       role: 'OWNER',
@@ -137,7 +137,7 @@ export async function seedCleanProduction() {
   console.log(' Sales / Debts: 0 (Zero debt, zero mock sales)');
   console.log(' Customers: 0 (Clean slate)');
   console.log(' Expenses / Purchases: 0');
-  console.log(' Owner Login: username "owner" or "admin@feedpro.co.ke"');
+  console.log(' Owner Login: username "owner" or "admin@jmfeeds.co.ke"');
   console.log(' The Owner can change password anytime via Profile & Settings.');
   console.log('--------------------------------------------------');
 }

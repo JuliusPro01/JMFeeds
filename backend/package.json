@@ -1,7 +1,7 @@
-{
-  "name": "feedpro-backend",
+﻿{
+  "name": "jmfeeds-backend",
   "version": "1.0.0",
-  "description": "FeedPro Business Management System Backend",
+  "description": "JMFeeds Business Management System Backend",
   "main": "dist/index.js",
   "scripts": {
     "build": "node node_modules/typescript/bin/tsc",

@@ -1,8 +1,8 @@
-import bcrypt from 'bcryptjs';
+﻿import bcrypt from 'bcryptjs';
 import prisma from './prisma';
 
 export async function seedDatabase() {
-  console.log('Seeding FeedPro database...');
+  console.log('Seeding JMFeeds database...');
 
   // 1. Settings
   await prisma.businessSettings.upsert({
@@ -12,7 +12,7 @@ export async function seedDatabase() {
       id: 'default-settings',
       businessName: 'Voice of the Farmer JM Feeds',
       contactPhone: '0726704623',
-      contactEmail: 'info@feedpro.co.ke',
+      contactEmail: 'info@jmfeeds.co.ke',
       physicalAddress: "Murang'a Town",
       currency: 'KSh',
       timeZone: 'Africa/Nairobi',
@@ -32,12 +32,12 @@ export async function seedDatabase() {
   const owner = await prisma.user.upsert({
     where: { username: 'owner' },
     update: {
-      email: 'admin@feedpro.co.ke',
+      email: 'admin@jmfeeds.co.ke',
       phone: '+254 70000000',
     },
     create: {
       username: 'owner',
-      email: 'admin@feedpro.co.ke',
+      email: 'admin@jmfeeds.co.ke',
       phone: '+254 70000000',
       passwordHash,
       fullName: 'John Kamau',
@@ -50,12 +50,12 @@ export async function seedDatabase() {
   const operator = await prisma.user.upsert({
     where: { username: 'operator' },
     update: {
-      email: 'operator@feedpro.co.ke',
+      email: 'operator@jmfeeds.co.ke',
       phone: '+254 722 112233',
     },
     create: {
       username: 'operator',
-      email: 'operator@feedpro.co.ke',
+      email: 'operator@jmfeeds.co.ke',
       phone: '+254 722 112233',
       passwordHash: operatorPasswordHash,
       fullName: 'Mary Wanjiku',

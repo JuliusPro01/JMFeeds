@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Grid, Link, Divider, Chip } from '@mui/material';
+﻿import { Box, Container, Typography, Grid, Link, Divider, Chip } from '@mui/material';
 import {
   Boxes, ShieldCheck, TrendingUp, Phone, Mail, MapPin, CheckCircle2,
   Lock, Award
@@ -61,7 +61,7 @@ export default function PublicFooter({ onNavigate }: PublicFooterProps) {
                 Better Stock. Higher Profits.
               </Typography>
               <Typography sx={{ fontSize: 13, color: '#8EA6B8' }}>
-                Voice of the Farmer JM Feeds · Murang'a Town
+                Voice of the Farmer JM Feeds Â· Murang'a Town
               </Typography>
             </Box>
           </Box>
@@ -106,7 +106,7 @@ export default function PublicFooter({ onNavigate }: PublicFooterProps) {
               </Box>
             </Box>
             <Typography sx={{ fontSize: 13.5, lineHeight: 1.7, color: '#9BB2C4', mb: 2.5, pr: { md: 2 } }}>
-              Built for Voice of the Farmer JM FEEDS in Murang'a Town. Tracks every bag of dairy meal and poultry feed, farming supplies, customer debts, M-Pesa payments, and daily profit — all secured and auditable.
+              Built for Voice of the Farmer JM FEEDS in Murang'a Town. Tracks every bag of dairy meal and poultry feed, farming supplies, customer debts, M-Pesa payments, and daily profit â€” all secured and auditable.
             </Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
               <Box sx={{ width: 8, height: 8, borderRadius: '50%', bgcolor: '#2DBB67' }} />
@@ -157,7 +157,7 @@ export default function PublicFooter({ onNavigate }: PublicFooterProps) {
               {[
                 { label: 'Public Home', key: 'home' as const },
                 { label: 'System Features', key: 'features' as const },
-                { label: 'About FeedPro', key: 'about' as const },
+                { label: 'About JMFeeds', key: 'about' as const },
                 { label: 'Owner / Operator Login', key: 'login' as const },
               ].map((item) => (
                 <Typography
@@ -198,7 +198,7 @@ export default function PublicFooter({ onNavigate }: PublicFooterProps) {
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.2 }}>
                 <Mail size={16} color="#2DBB67" style={{ flexShrink: 0 }} />
                 <Typography sx={{ fontSize: 13, color: '#9BB2C4' }}>
-                  info@feedpro.co.ke
+                  info@jmfeeds.co.ke
                 </Typography>
               </Box>
             </Box>
@@ -219,7 +219,7 @@ export default function PublicFooter({ onNavigate }: PublicFooterProps) {
           }}
         >
           <Typography sx={{ fontSize: 12, color: '#7E97A8' }}>
-            Â© {new Date().getFullYear()} Feed Empire .All rights reserved. Designed and developed by <Link href="https://github.com/JohnMwihaki" target="_blank" rel="noopener" sx={{ color: '#2DBB67', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>John Kimani</Link>.
+            © {new Date().getFullYear()} Feed Empire .All rights reserved. Designed and developed by <Link href="https://github.com/JohnMwihaki" target="_blank" rel="noopener" sx={{ color: '#2DBB67', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>John Kimani</Link>.
           </Typography>
 
           <Box sx={{ display: 'flex', gap: 2.5, flexWrap: 'wrap', justifyContent: 'center' }}>

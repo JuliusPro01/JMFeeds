@@ -1,4 +1,4 @@
-datasource db {
+﻿datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
@@ -350,9 +350,9 @@ model DailyClosing {
 
 model BusinessSettings {
   id                 String   @id @default(uuid())
-  businessName       String   @default("FeedPro Enterprises Ltd")
+  businessName       String   @default("JMFeeds Enterprises Ltd")
   contactPhone       String   @default("+254 700 000 000")
-  contactEmail       String   @default("info@feedpro.co.ke")
+  contactEmail       String   @default("info@jmfeeds.co.ke")
   physicalAddress    String   @default("Nairobi, Kenya")
   currency           String   @default("KSh")
   timeZone           String   @default("Africa/Nairobi")
@@ -361,7 +361,7 @@ model BusinessSettings {
   allowNegativeStock Boolean  @default(false)
   lowStockThreshold  Int      @default(5)
   expiryAlertDays    Int      @default(30)
-  receiptFooter      String?  @default("Thank you for choosing FeedPro! Better Stock. Higher Profits.")
+  receiptFooter      String?  @default("Thank you for choosing JMFeeds! Better Stock. Higher Profits.")
   updatedAt          DateTime @updatedAt
 }
 

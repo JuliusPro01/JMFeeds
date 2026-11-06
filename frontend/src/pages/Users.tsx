@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import {
   Box, Button, Typography, Paper, Table, TableBody, TableCell, TableHead, TableRow, Chip,
@@ -132,7 +132,7 @@ export default function Users() {
 
       {/* Reset password */}
       <Dialog open={!!resetDialog} onClose={() => setResetDialog(null)} maxWidth="xs" fullWidth>
-        <DialogTitle>Reset Password — {resetDialog?.fullName}</DialogTitle>
+        <DialogTitle>Reset Password â€” {resetDialog?.fullName}</DialogTitle>
         <DialogContent sx={{ pt: '12px !important', display: 'flex', flexDirection: 'column', gap: 2 }}>
           <TextField size="small" type="password" label="New Password (min 6 chars)" value={newPassword}
             onChange={(e) => setNewPassword(e.target.value)} />
@@ -155,14 +155,14 @@ export default function Users() {
           </Typography>
           <Box sx={{ p: 1.5, bgcolor: '#F8FAFC', borderRadius: 2, mb: 2, border: '1px solid #E2E8F0' }}>
             <Typography sx={{ fontSize: 12, color: 'text.secondary' }}>
-              • Username: <b>{deleteUserDialog?.username}</b>
+              â€¢ Username: <b>{deleteUserDialog?.username}</b>
             </Typography>
             <Typography sx={{ fontSize: 12, color: 'text.secondary' }}>
-              • Role: <b>{deleteUserDialog?.role}</b>
+              â€¢ Role: <b>{deleteUserDialog?.role}</b>
             </Typography>
           </Box>
           <Alert severity="info" sx={{ fontSize: 12 }}>
-            <b>FeedPro Smart Delete:</b> If this operator has zero recorded transactions, the account is permanently deleted. If they have recorded sales, expenses, or daily closings, the account is safely deactivated (disabled from login) to protect your financial and audit history.
+            <b>JMFeeds Smart Delete:</b> If this operator has zero recorded transactions, the account is permanently deleted. If they have recorded sales, expenses, or daily closings, the account is safely deactivated (disabled from login) to protect your financial and audit history.
           </Alert>
         </DialogContent>
         <DialogActions sx={{ p: 2, pt: 0 }}>
