@@ -1,4 +1,4 @@
-﻿import { useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import {
   Box, Button, Chip, Typography, TextField, MenuItem, Paper, Dialog, DialogTitle, DialogContent,
@@ -319,7 +319,7 @@ export default function Inventory() {
                     }}
                   >
                     <Typography sx={{ fontSize: 14 }}>
-                      {p.category?.name === 'Cosmetics' ? 'ðŸ§´' : 'ðŸŒ¾'}
+                      {p.category?.name === 'Cosmetics' ? '🧴' : '🌾'}
                     </Typography>
                   </Box>
                 </TableCell>
@@ -328,7 +328,7 @@ export default function Inventory() {
                     {p.name}
                   </Typography>
                   <Typography sx={{ fontSize: 11, color: '#627D98' }}>
-                    SKU: {p.sku} {p.barcode ? `â€¢ Barcode: ${p.barcode}` : ''}
+                    SKU: {p.sku} {p.barcode ? `• Barcode: ${p.barcode}` : ''}
                   </Typography>
                 </TableCell>
                 <TableCell sx={{ fontSize: 12 }}>
@@ -569,7 +569,7 @@ export default function Inventory() {
                 value={form.supplierId}
                 onChange={(e) => setForm({ ...form, supplierId: e.target.value })}
               >
-                <MenuItem value="">â€” None / Local Sourcing â€”</MenuItem>
+                <MenuItem value="">— None / Local Sourcing —</MenuItem>
                 {suppliers.map((s: any) => (
                   <MenuItem key={s.id} value={s.id}>{s.name}</MenuItem>
                 ))}
@@ -726,10 +726,10 @@ export default function Inventory() {
           </Typography>
           <Box sx={{ p: 1.5, bgcolor: '#F8FAFC', borderRadius: 2, mb: 2, border: '1px solid #E2E8F0' }}>
             <Typography sx={{ fontSize: 12, color: 'text.secondary' }}>
-              â€¢ SKU: <b>{deleteProductDialog?.sku}</b>
+              • SKU: <b>{deleteProductDialog?.sku}</b>
             </Typography>
             <Typography sx={{ fontSize: 12, color: 'text.secondary' }}>
-              â€¢ Current Stock: <b>{deleteProductDialog?.stockQuantity} {deleteProductDialog?.unit}</b>
+              • Current Stock: <b>{deleteProductDialog?.stockQuantity} {deleteProductDialog?.unit}</b>
             </Typography>
           </Box>
           <Alert severity="info" sx={{ fontSize: 12 }}>
@@ -752,7 +752,7 @@ export default function Inventory() {
       {/* 4. Movement History Dialog */}
       <Dialog open={!!historyProduct} onClose={() => setHistoryProduct(null)} maxWidth="sm" fullWidth>
         <DialogTitle sx={{ fontWeight: 700 }}>
-          Movement History â€” {historyProduct?.name}
+          Movement History — {historyProduct?.name}
           <IconButton onClick={() => setHistoryProduct(null)} sx={{ position: 'absolute', right: 10, top: 10 }}>
             <PackageX size={16} />
           </IconButton>
@@ -804,7 +804,7 @@ function MovementHistory({ productId }: { productId: string }) {
               {Number(m.quantityChange) > 0 ? '+' : ''}{Number(m.quantityChange)}
             </TableCell>
             <TableCell sx={{ fontSize: 11.5 }}>{Number(m.balanceAfter)}</TableCell>
-            <TableCell sx={{ fontSize: 10.5 }}>{m.referenceId ?? 'â€”'}</TableCell>
+            <TableCell sx={{ fontSize: 10.5 }}>{m.referenceId ?? '—'}</TableCell>
           </TableRow>
         ))}
       </TableBody>

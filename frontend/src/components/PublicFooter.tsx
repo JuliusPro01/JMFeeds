@@ -1,4 +1,4 @@
-﻿import { Box, Container, Typography, Grid, Link, Divider, Chip } from '@mui/material';
+import { Box, Container, Typography, Grid, Link, Divider, Chip } from '@mui/material';
 import {
   Boxes, ShieldCheck, TrendingUp, Phone, Mail, MapPin, CheckCircle2,
   Lock, Award
@@ -61,7 +61,7 @@ export default function PublicFooter({ onNavigate }: PublicFooterProps) {
                 Better Stock. Higher Profits.
               </Typography>
               <Typography sx={{ fontSize: 13, color: '#8EA6B8' }}>
-                Voice of the Farmer JM Feeds Â· Murang'a Town
+                Voice of the Farmer JM Feeds · Murang'a Town
               </Typography>
             </Box>
           </Box>
@@ -106,7 +106,7 @@ export default function PublicFooter({ onNavigate }: PublicFooterProps) {
               </Box>
             </Box>
             <Typography sx={{ fontSize: 13.5, lineHeight: 1.7, color: '#9BB2C4', mb: 2.5, pr: { md: 2 } }}>
-              Built for Voice of the Farmer JM FEEDS in Murang'a Town. Tracks every bag of dairy meal and poultry feed, farming supplies, customer debts, M-Pesa payments, and daily profit â€” all secured and auditable.
+              Built for Voice of the Farmer JM FEEDS in Murang'a Town. Tracks every bag of dairy meal and poultry feed, farming supplies, customer debts, M-Pesa payments, and daily profit — all secured and auditable.
             </Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
               <Box sx={{ width: 8, height: 8, borderRadius: '50%', bgcolor: '#2DBB67' }} />

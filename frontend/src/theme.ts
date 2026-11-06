@@ -1,6 +1,6 @@
-﻿import { createTheme } from '@mui/material';
+import { createTheme } from '@mui/material';
 
-// JMFeeds brand colors â€” from the mockup
+// JMFeeds brand colors — from the mockup
 export const brand = {
   green: '#23A455',        // primary brand green
   greenDark: '#1B7A3E',

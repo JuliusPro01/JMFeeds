@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Box, Typography, TextField, Button, Checkbox, FormControlLabel,
@@ -180,7 +180,7 @@ export default function Login() {
                   fullWidth
                   size="small"
                   type={showPassword ? 'text' : 'password'}
-                  placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
+                  placeholder="••••••••"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   autoComplete="current-password"
@@ -308,7 +308,7 @@ export default function Login() {
                 </Typography>
                 <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1, flexWrap: 'wrap' }}>
                   <Chip
-                    label="ðŸ‘‘ Owner: admin@jmfeeds.co.ke"
+                    label="👑 Owner: admin@jmfeeds.co.ke"
                     size="small"
                     onClick={() => fillCredentials('admin@jmfeeds.co.ke', 'admin123')}
                     sx={{
@@ -321,7 +321,7 @@ export default function Login() {
                     }}
                   />
                   <Chip
-                    label="ðŸ‘¤ Operator: operator"
+                    label="👤 Operator: operator"
                     size="small"
                     onClick={() => fillCredentials('operator', 'operator123')}
                     sx={{

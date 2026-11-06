@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import {
   Box, Button, Typography, Paper, Table, TableBody, TableCell, TableHead, TableRow, Chip,
@@ -132,7 +132,7 @@ export default function Users() {
 
       {/* Reset password */}
       <Dialog open={!!resetDialog} onClose={() => setResetDialog(null)} maxWidth="xs" fullWidth>
-        <DialogTitle>Reset Password â€” {resetDialog?.fullName}</DialogTitle>
+        <DialogTitle>Reset Password — {resetDialog?.fullName}</DialogTitle>
         <DialogContent sx={{ pt: '12px !important', display: 'flex', flexDirection: 'column', gap: 2 }}>
           <TextField size="small" type="password" label="New Password (min 6 chars)" value={newPassword}
             onChange={(e) => setNewPassword(e.target.value)} />
@@ -155,10 +155,10 @@ export default function Users() {
           </Typography>
           <Box sx={{ p: 1.5, bgcolor: '#F8FAFC', borderRadius: 2, mb: 2, border: '1px solid #E2E8F0' }}>
             <Typography sx={{ fontSize: 12, color: 'text.secondary' }}>
-              â€¢ Username: <b>{deleteUserDialog?.username}</b>
+              • Username: <b>{deleteUserDialog?.username}</b>
             </Typography>
             <Typography sx={{ fontSize: 12, color: 'text.secondary' }}>
-              â€¢ Role: <b>{deleteUserDialog?.role}</b>
+              • Role: <b>{deleteUserDialog?.role}</b>
             </Typography>
           </Box>
           <Alert severity="info" sx={{ fontSize: 12 }}>

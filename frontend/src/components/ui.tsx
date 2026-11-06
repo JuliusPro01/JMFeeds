@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Box, Paper, Typography, Chip, Card, CardContent } from '@mui/material';
 import { TrendingUp, TrendingDown } from 'lucide-react';
 import { fmt } from '../utils/format';
@@ -21,7 +21,7 @@ export function StatCard({
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.4, mt: 0.5 }}>
             {up ? <TrendingUp size={13} color="#23A455" /> : <TrendingDown size={13} color="#E23B3B" />}
             <Typography sx={{ fontSize: 11.5, fontWeight: 600, color: up ? '#23A455' : '#E23B3B' }}>
-              {Math.abs(changePct)}% {changePct === 0 ? '' : up ? 'â†‘' : 'â†“'} vs yesterday
+              {Math.abs(changePct)}% {changePct === 0 ? '' : up ? '↑' : '↓'} vs yesterday
             </Typography>
           </Box>
         )}
@@ -32,7 +32,7 @@ export function StatCard({
 
 export function StatusChip({ status }: { status: string }) {
   const map: Record<string, { icon?: string; bg: string; fg: string }> = {
-    'In Stock': { icon: 'âœ“', bg: '#EAF7EF', fg: '#1B7A3E' },
+    'In Stock': { icon: '✓', bg: '#EAF7EF', fg: '#1B7A3E' },
     'Low Stock': { bg: '#FFF6E9', fg: '#B26A00' },
     'Out of Stock': { bg: '#FDECEC', fg: '#C02828' },
     'Expiring Soon': { bg: '#FFF6E9', fg: '#B26A00' },
@@ -68,7 +68,7 @@ export function StatusChip({ status }: { status: string }) {
 export function PageLoading() {
   return (
     <Box sx={{ py: 8, textAlign: 'center', color: 'text.secondary', fontSize: 14 }}>
-      Loadingâ€¦
+      Loading…
     </Box>
   );
 }
@@ -95,7 +95,7 @@ export function SectionCard({ title, children, action }: { title: string; childr
   );
 }
 
-// â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€” Exports (CSV / Excel / PDF working utilities) â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
+// ————————————— Exports (CSV / Excel / PDF working utilities) —————————————
 export async function exportCSV(filename: string, rows: Record<string, any>[]) {
   if (!rows.length) return;
   const headers = Object.keys(rows[0]);

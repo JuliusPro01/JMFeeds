@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   Box,
@@ -199,10 +199,10 @@ export default function Expenses() {
                   onChange={(e) => setSelectedOperator(e.target.value)}
                   sx={{ minWidth: 230 }}
                 >
-                  <MenuItem value="ALL">ðŸ¢ All Staff (Combined)</MenuItem>
+                  <MenuItem value="ALL">🏢 All Staff (Combined)</MenuItem>
                   {users.map((u: any) => (
                     <MenuItem key={u.id} value={u.id}>
-                      ðŸ‘¤ {u.fullName} ({u.role})
+                      👤 {u.fullName} ({u.role})
                     </MenuItem>
                   ))}
                 </TextField>

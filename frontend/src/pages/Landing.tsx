@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Box,
@@ -97,7 +97,7 @@ export default function Landing() {
                   <Typography
                     sx={{ fontSize: 13, fontWeight: 700, color: "#1B7A3E" }}
                   >
-                    Voice of the Farmer JM Feeds Â· JMFeeds BMS
+                    Voice of the Farmer JM Feeds · JMFeeds BMS
                   </Typography>
                 </Box>
 
@@ -128,7 +128,7 @@ export default function Landing() {
                   }}
                 >
                   Track dairy meal, poultry feeds, supplements, and farming supplies. Manage sales,
-                  debts, and stock â€” all in one system built for Voice of the Farmer JM FEEDS
+                  debts, and stock — all in one system built for Voice of the Farmer JM FEEDS
                   in Murang'a Town.
                 </Typography>
 
@@ -278,7 +278,7 @@ export default function Landing() {
                       Real-time Feed Ledger
                     </Typography>
                     <Typography sx={{ fontSize: 11, color: "#627D98" }}>
-                      Layers Ã¢â‚¬Â¢ Dairy Ã¢â‚¬Â¢ Broilers Ã¢â‚¬Â¢ Supplements
+                      Layers • Dairy • Broilers • Supplements
                     </Typography>
                   </Box>
                 </Box>
@@ -888,7 +888,7 @@ export default function Landing() {
                   }}
                 >
                   Voice of the Farmer JM FEEDS in Murang'a Town handles dairy meal, layers mash,
-                  broiler finisher, and farming supplies â€” all with credit customers,
+                  broiler finisher, and farming supplies — all with credit customers,
                   M-Pesa payments, and daily cash reconciliations. 
                 </Typography>
                 <Typography
@@ -901,7 +901,7 @@ export default function Landing() {
                 >
                   The owner can see every bag that entered or left the store,
                   who owes money, which products generate the best margins, and
-                  whether the day's cash matches the sales records â€” all from
+                  whether the day's cash matches the sales records — all from
                   one dashboard.
                 </Typography>
                 <Button

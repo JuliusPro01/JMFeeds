@@ -1,4 +1,4 @@
-﻿import { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import {
   Box,
@@ -85,7 +85,7 @@ export default function Reports() {
           Total: Number(s.totalAmount),
           Paid: Number(s.amountPaid),
           Balance: Number(s.balanceDue),
-          Payment: s.payments?.[0]?.paymentMethod ?? "â€”",
+          Payment: s.payments?.[0]?.paymentMethod ?? "—",
           Status: s.status,
         }));
       case "Inventory":
@@ -99,7 +99,7 @@ export default function Reports() {
           UnitPrice: p.unitPrice,
           Valuation: p.valuation,
           Status: p.status,
-          Expiry: p.expiryDate ? fmtDate(p.expiryDate) : "â€”",
+          Expiry: p.expiryDate ? fmtDate(p.expiryDate) : "—",
         }));
       case "Purchases":
         return purchases.map((o: any) => ({
@@ -143,7 +143,7 @@ export default function Reports() {
           User: e.user?.username ?? "system",
           Action: e.action,
           Entity: e.entity,
-          EntityId: e.entityId ?? "â€”",
+          EntityId: e.entityId ?? "—",
         }));
       default:
         return [];
@@ -161,7 +161,7 @@ export default function Reports() {
       if (type === "pdf") await exportPDF(name, `${tab} Report`, rows);
       else if (type === "excel") await exportExcel(name, rows, tab);
       else await exportCSV(name, rows);
-      setSnack("Export downloaded â€” figures reflect your selected filters");
+      setSnack("Export downloaded — figures reflect your selected filters");
     } finally {
       setExporting(false);
     }

@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import api from '../api/client';
@@ -216,7 +216,7 @@ export default function Layout() {
             <Box>
               <Typography sx={{ fontSize: 13.5, fontWeight: 700, lineHeight: 1.1 }}>{user?.fullName}</Typography>
               <Typography sx={{ fontSize: 11, color: user?.role === 'OWNER' ? '#23A455' : '#47607A', fontWeight: 600 }}>
-                {user?.role === 'OWNER' ? 'Admin âŒ„' : 'Operator âŒ„'}
+                {user?.role === 'OWNER' ? 'Admin ⌄' : 'Operator ⌄'}
               </Typography>
             </Box>
           </Box>
