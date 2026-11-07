@@ -198,7 +198,7 @@ export default function PublicFooter({ onNavigate }: PublicFooterProps) {
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.2 }}>
                 <Mail size={16} color="#2DBB67" style={{ flexShrink: 0 }} />
                 <Typography sx={{ fontSize: 13, color: '#9BB2C4' }}>
-                  info@jmfeeds.co.ke
+                  info@becube.co.ke
                 </Typography>
               </Box>
             </Box>
